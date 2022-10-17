@@ -6,7 +6,7 @@
  *
  * Return: pointer to valid function or NULL
  */
-static int (*check_for_specifiers(const char *format))(va_list)
+int (*check_for_specifiers(const char *format))(va_list)
 {
 	unsigned int i;
 	put_t p[] = {
