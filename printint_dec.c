@@ -31,7 +31,6 @@ int integer(int num)
 /**
   *put_i - prints an integer
   *
-  *@format: format to print an integer
   *@i: va_list with int to print
   *
   *Return: number of int printed
