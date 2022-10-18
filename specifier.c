@@ -12,6 +12,7 @@ int (*check_for_specifiers(const char *format))(va_list)
 	put_t p[] = {
 		{"c", put_c},
 		{"s", put_s},
+		{"i", put_i},
 		{NULL, NULL}
 	};
 

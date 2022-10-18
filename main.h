@@ -21,5 +21,6 @@ int (*check_for_specifiers(const char *format))(va_list);
 int strlength(char *string);
 int _putchar(char c);
 int _printf(const char *format, ...);
+int put_i(va_list i);
 
 #endif /*MAIN_H*/
