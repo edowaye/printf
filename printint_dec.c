@@ -1,47 +1,33 @@
-#include "main.h"
+#include"main.h"
 
 /**
-  *integer- a function that prints an integer
-  *@num: input integer
-  *
-  *Return: count of integer
-  *
-  */
-
-int integer(int num)
-{
-	unsigned int ui;
-	int count = 0;
-
-	if (num < 0)
-	{
-		_putchar('-');
-		ui = -num;
-	}
-	else
-		ui = num;
-
-	if (ui >= 10)
-		integer(ui / 10);
-	_putchar(ui % 10 + '0');
-
-	return (count);
-}
-
-/**
-  *put_i - prints an integer
-  *
-  *@i: va_list with int to print
-  *
-  *Return: number of int printed
-  */
-
+ * put_i - function to print integers
+ * @i: list printed
+ *
+ * Return: Return count/ number of digits printed
+ */
 int put_i(va_list i)
 {
-	int num = va_arg(i, int);
-	int nn;
+	int a, expo = 1, len = 0;
+	unsigned int n;
 
-	nn = integer(num);
+	a = va_arg(i, int);
 
-	return (nn);
+	if (a < 0)
+	{
+		len = len + _putchar('-');
+		n = a * -1;
+	}
+	else
+		n = a;
+	while (n / expo > 9)
+		expo *= 10;
+
+	while (expo != 0)
+	{
+		len = len + _putchar(n / expo + '0');
+		n = n % expo;
+		expo = expo / 10;
+	}
+	return (len);
 }

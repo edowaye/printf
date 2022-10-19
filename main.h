@@ -15,7 +15,7 @@ typedef struct put
 } put_t;
 
 
-int print_hex(unsigned int n, unsigned int c);
+
 int put_u(va_list u);
 int put_b(va_list b);
 int put_s(va_list s);
