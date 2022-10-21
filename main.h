@@ -15,6 +15,7 @@ typedef struct put
 } put_t;
 
 
+int put_o(va_list o);
 int put_x(va_list x);
 int put_u(va_list u);
 int put_b(va_list b);

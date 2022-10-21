@@ -18,6 +18,7 @@ int (*check_for_specifiers(const char *format))(va_list)
 		{"d", put_i},
 		{"x", put_x},
 		{"X", put_X},
+		{"o", put_o},
 		{NULL, NULL}
 	};
 
