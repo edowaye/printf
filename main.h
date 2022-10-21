@@ -15,7 +15,7 @@ typedef struct put
 } put_t;
 
 
-
+int put_x(va_list x);
 int put_u(va_list u);
 int put_b(va_list b);
 int put_s(va_list s);
@@ -25,5 +25,7 @@ int strlength(char *string);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int put_i(va_list i);
+int put_X(va_list X);
+int conv_hex(unsigned int n, unsigned int hex, char alpha);
 
 #endif /*MAIN_H*/
