@@ -11,7 +11,7 @@ int (*check_for_specifiers(const char *format))(va_list)
 	unsigned int i;
 	put_t p[] = {
 		{"c", put_c},
-		{"s", put_s},
+		{"S", put_s},
 		{"b", put_b},
 		{"u", put_u},
 		{"i", put_i},
